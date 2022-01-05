@@ -71,19 +71,19 @@ class RestaurantTest {
 
     //<<<<<<<<<<<<<<<<<<<<<<<ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>
 
-//    @Test
-//    public void total_order_value_of_items_should_be_equal_to_total_price_of_item_inputs_provided() {
-//
-//        // Providing complete list of item names in the menu for test purpose
-//        List<String> itemNames = new ArrayList();
-//        for ( Item item : restaurant.getMenu() )
-//        {
-//            itemNames.add( item.getName());
-//        }
-//
-//        // Total of items : 119 + 269 = 388
-//        assertEquals(388,restaurant.getOrderValue(itemNames));
-//    }
+    @Test
+    public void total_order_value_of_items_should_be_equal_to_total_price_of_item_inputs_provided() {
+
+        // Providing complete list of item names in the menu for test purpose
+        List<String> itemNames = new ArrayList();
+        for ( Item item : restaurant.getMenu() )
+        {
+            itemNames.add( item.getName());
+        }
+
+        // Total of items : 119 + 269 = 388
+        assertEquals(388,restaurant.getOrderValue(itemNames));
+    }
 
 
 }
